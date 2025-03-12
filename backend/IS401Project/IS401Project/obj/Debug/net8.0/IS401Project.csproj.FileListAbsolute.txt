@@ -1,0 +1,8 @@
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.csproj.AssemblyReference.cache
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.AssemblyInfoInputs.cache
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.AssemblyInfo.cs
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.csproj.CoreCompileInputs.cache
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tater\OneDrive - Brigham Young University\Classes\Info Sys\IS 401 Project Management\IS401Project\backend\IS401Project\IS401Project\obj\Debug\net8.0\IS401Project.sourcelink.json
