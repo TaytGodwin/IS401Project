@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\models\\tagnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\models\\tagnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\notabledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\notabledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\tagnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\tagnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,16 +26,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TagNote.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Models\\TagNote.cs",
-              "RelativeDocumentMoniker": "IS401Project\\Models\\TagNote.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Models\\TagNote.cs",
-              "RelativeToolTip": "IS401Project\\Models\\TagNote.cs",
+              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\TagNote.cs",
+              "RelativeDocumentMoniker": "IS401Project\\Data\\TagNote.cs",
+              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\TagNote.cs",
+              "RelativeToolTip": "IS401Project\\Data\\TagNote.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T01:48:56.294Z",
@@ -45,10 +45,10 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Note.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Models\\Note.cs",
-              "RelativeDocumentMoniker": "IS401Project\\Models\\Note.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Models\\Note.cs",
-              "RelativeToolTip": "IS401Project\\Models\\Note.cs",
+              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Note.cs",
+              "RelativeDocumentMoniker": "IS401Project\\Data\\Note.cs",
+              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Note.cs",
+              "RelativeToolTip": "IS401Project\\Data\\Note.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T01:35:32.049Z",
@@ -58,10 +58,10 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Tag.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Models\\Tag.cs",
-              "RelativeDocumentMoniker": "IS401Project\\Models\\Tag.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Models\\Tag.cs",
-              "RelativeToolTip": "IS401Project\\Models\\Tag.cs",
+              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Tag.cs",
+              "RelativeDocumentMoniker": "IS401Project\\Data\\Tag.cs",
+              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Tag.cs",
+              "RelativeToolTip": "IS401Project\\Data\\Tag.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T01:35:11.279Z",
@@ -69,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NotableDbContext.cs",
               "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\NotableDbContext.cs",
               "RelativeDocumentMoniker": "IS401Project\\Data\\NotableDbContext.cs",
               "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\NotableDbContext.cs",
               "RelativeToolTip": "IS401Project\\Data\\NotableDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAxwBYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T01:30:40.367Z",
               "EditorCaption": ""

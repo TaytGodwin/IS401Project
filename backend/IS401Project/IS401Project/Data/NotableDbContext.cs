@@ -1,5 +1,4 @@
-﻿using IS401Project.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace IS401Project.Data
 {

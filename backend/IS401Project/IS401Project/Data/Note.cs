@@ -1,4 +1,4 @@
-﻿namespace IS401Project.Models
+﻿namespace IS401Project.Data
 {
     public class Note
     {
