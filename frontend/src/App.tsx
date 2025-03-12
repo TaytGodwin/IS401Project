@@ -1,10 +1,12 @@
-import Login from './Login';
+import LoginPage from './components/Login/LoginPage';
+import StudyDashboard from './components/Home/StudyDashboard';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Login />;
+      <LoginPage />;
+      <StudyDashboard />;
     </>
   );
 }
