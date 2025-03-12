@@ -12,7 +12,7 @@ function StudyDashboard() {
         <GoalTracker />
         <StudyIdeasSection />
       </div>
-      <style jsx>{`
+      <style react-jsx>{`
         .dashboard {
           margin-left: auto;
           margin-right: auto;

@@ -68,7 +68,7 @@ function GoalTracker() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style react-jsx>{`
         .goals-container {
           align-self: stretch;
           display: flex;
