@@ -6,10 +6,11 @@ namespace IS401Project.Data
     {
         [Key]
         public int TagId { get; set; }
+        [Required]
         public string TagName { get; set; }
 
 
         // This is a list of multiple TagNote items attached to this tag
-        public List<TagNote> TagNotes { get; set; } = new List<TagNote>();
+        public List<TagNote>? TagNotes { get; set; } = new List<TagNote>();
     }
 }
