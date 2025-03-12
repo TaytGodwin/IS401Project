@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mekelihiller/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj": {}
+    "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj": {}
   },
   "projects": {
-    "/Users/mekelihiller/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj": {
+    "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mekelihiller/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj",
+        "projectUniqueName": "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj",
         "projectName": "IS401Project",
-        "projectPath": "/Users/mekelihiller/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj",
-        "packagesPath": "/Users/mekelihiller/.nuget/packages/",
-        "outputPath": "/Users/mekelihiller/RiderProjects/IS401Project/backend/IS401Project/IS401Project/obj/",
+        "projectPath": "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj",
+        "packagesPath": "/Users/dmattern/.nuget/packages/",
+        "outputPath": "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mekelihiller/.nuget/NuGet/NuGet.Config"
+          "/Users/dmattern/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -36,7 +36,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/dmattern/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
