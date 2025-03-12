@@ -61,7 +61,12 @@ function StudyIdeasSection() {
           flex-direction: column;
           overflow: hidden;
           align-items: center;
-          font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+          font-family:
+            Roboto,
+            -apple-system,
+            Roboto,
+            Helvetica,
+            sans-serif;
           font-weight: 700;
           text-align: center;
           justify-content: start;
