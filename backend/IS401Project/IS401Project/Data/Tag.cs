@@ -1,7 +1,10 @@
-﻿namespace IS401Project.Data
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace IS401Project.Data
 {
     public class Tag
     {
+        [Key]
         public int TagId { get; set; }
         public string TagName { get; set; }
 

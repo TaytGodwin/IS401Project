@@ -1,7 +1,10 @@
-﻿namespace IS401Project.Data
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace IS401Project.Data
 {
     public class Note
     {
+        [Key]
         public int NoteId { get; set; }
         public DateTime NoteDate { get; set; } = DateTime.Now;
         public string? NoteContent { get; set; }
