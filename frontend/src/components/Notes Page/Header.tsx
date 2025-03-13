@@ -62,7 +62,7 @@ const Header: React.FC = () => {
           className="profile-image"
         />
       </div>
-      <style jsx>{`
+      <style react-jsx>{`
         .header-container {
           position: absolute;
           z-index: 0;

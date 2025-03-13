@@ -21,7 +21,7 @@ const TagComponent: React.FC<TagComponentProps> = ({ text, onRemove }) => {
           />
         </button>
       )}
-      <style jsx>{`
+      <style react-jsx>{`
         .tag-wrapper {
           border-radius: 8px;
           background-color: rgba(176, 183, 195, 1);
