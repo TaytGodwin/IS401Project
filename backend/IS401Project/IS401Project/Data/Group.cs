@@ -17,4 +17,6 @@ public class Group
     
     [Required]
     public DateTime CreationDate { get; set; } = DateTime.Now;
+    
+    public List<UserGroup>? UserGroups { get; set; } = new List<UserGroup>();
 }
