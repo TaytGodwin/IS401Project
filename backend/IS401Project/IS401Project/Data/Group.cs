@@ -16,5 +16,5 @@ public class Group
     public User GroupCreator { get; set; }
     
     [Required]
-    public DateTime CreationData { get; set; } = DateTime.Now;
+    public DateTime CreationDate { get; set; } = DateTime.Now;
 }
