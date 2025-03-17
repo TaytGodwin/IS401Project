@@ -7,6 +7,7 @@ import './App.css';
 
 import Layout from './components/Layout/Layout'
 import React from 'react';
+import PublicGroupsPage from './components/Groups';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Layout>
       <LoginPage />;
       <StudyDashboard />;
+      <PublicGroupsPage />;
     </Layout>
       
     </>
