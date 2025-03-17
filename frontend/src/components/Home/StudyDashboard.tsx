@@ -1,5 +1,4 @@
 'use client';
-import * as React from 'react';
 import StatsCard from './StatsCard';
 import GoalTracker from './GoalTracker';
 import StudyIdeasSection from './StudyIdeasSection';
