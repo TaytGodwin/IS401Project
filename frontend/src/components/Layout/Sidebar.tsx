@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import SidebarItem from './SidebarItem';
+import './Sidebar.css';
 
 /**
  * Sidebar component that displays navigation options

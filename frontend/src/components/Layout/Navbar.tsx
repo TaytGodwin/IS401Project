@@ -9,10 +9,9 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
   return (
     <div className="flex items-center pt-2 px-4 pb-2 relative bg-white shadow z-50">
       {/* You can add your logo or other navbar elements here */}
-      <div className="logo">My App</div>
      
-      {/* Status bar */}
-      <div className="flex justify-between items-center pt-5 px-4 pb-0 h-10 bg-cyan-700">
+     {/* status bar*/}
+      {/* <div className="flex justify-between items-center pt-5 px-4 pb-0 h-10 bg-cyan-700">
         <div className="text-gray-100 font-sans text-base leading-6 text-center flex-1">
           9:41
         </div>
@@ -65,9 +64,9 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
         {/* Title and logo */}
-        <div className="flex items-center absolute left-1/2 transform -translate-x-1/2">
+        {/* <div className="flex items-center absolute left-1/2 transform -translate-x-1/2">
           <div className="text-gray-100 font-roboto text-base font-bold">
             Notable
           </div>
@@ -83,29 +82,30 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
               <circle cx="15" cy="15" r="15" fill="#CCCCCC" />
             </svg>
           </div>
-        </div>
+        </div> */}
       {/* Menu button */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-11 h-11 flex justify-center items-center rounded-md border border-cyan-700 bg-cyan-700"
-        aria-label="Toggle menu"
+      
+      onClick={() => setIsOpen(!isOpen)}
+      className="fixed top-4 left-4 z-50 w-11 h-11 flex justify-center items-center rounded-md border border-cyan-700 bg-cyan-700"
+      aria-label="Toggle menu"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5"
       >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M2.5 10H17.5M2.5 5H17.5M2.5 15H17.5"
-            stroke="#EDEDED"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <path
+          d="M2.5 10H17.5M2.5 5H17.5M2.5 15H17.5"
+          stroke="#EDEDED"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
       </button>
     </div>
   );
