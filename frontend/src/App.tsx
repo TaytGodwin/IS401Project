@@ -13,7 +13,7 @@ function App() {
     <>
     <Layout>
       <LoginPage />;
-  
+      <StudyDashboard />;
     </Layout>
       
     </>
