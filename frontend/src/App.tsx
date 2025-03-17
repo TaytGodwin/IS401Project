@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import LoginPage from './components/Login/LoginPage';
 import NotableApp from './components/CreatePost/NotableApp';
-import NotesApp from './components/Notes Page/NotesApp';
-import HomePage from './components/Home/HomePage';
+import NotePage from './components/Notes/NotePage';
 import './App.css';
 
 import Layout from './components/Layout/Layout';
@@ -12,9 +11,13 @@ import PublicGroupsPage from './components/Groups';
 function App() {
   return (
     <>
-      <Layout>;
+    <Layout>
+      <LoginPage />;
+      <StudyDashboard />;
+    </Layout>
 
-      </Layout>
+    <PublicGroupsPage />
+    <NotePage />
       
       <LoginPage />;
       <HomePage />;
