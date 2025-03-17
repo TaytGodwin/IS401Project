@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import LoginPage from './components/Login/LoginPage';
-import NotableApp from './components/CreatePost/NotableApp';
+import CreatePostPage from './components/CreatePost/CreatePostPage';
 import NotePage from './components/Notes/NotePage';
 import HomePage from './components/Home/HomePage'
 import './App.css';
@@ -16,12 +16,11 @@ function App() {
 
     </Layout>
 
-
     <NotePage />
-      
-      <LoginPage />
-      <HomePage />
-      <PublicGroupsPage />
+    <LoginPage />
+    <HomePage />
+    <PublicGroupsPage />
+    <CreatePostPage />
     </>
   );
 }
