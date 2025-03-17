@@ -19,9 +19,9 @@ function App() {
 
     <NotePage />
       
-      <LoginPage />;
-      <HomePage />;
-      <PublicGroupsPage />;
+      <LoginPage />
+      <HomePage />
+      <PublicGroupsPage />
     </>
   );
 }

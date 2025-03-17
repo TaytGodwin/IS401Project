@@ -1,13 +1,11 @@
 'use client';
 import * as React from 'react';
-import { StatusBar } from './StatusBar';
 import { WelcomeMessage } from './WelcomeMessage';
 import { LoginForm } from './LoginForm';
 
 const LoginPage: React.FC = () => {
   return (
     <main className="login-page">
-      <StatusBar />
       <div className="content-container">
         <WelcomeMessage />
         <LoginForm />
