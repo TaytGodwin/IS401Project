@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Added styles for navbar and responsive layout */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0 !important;
+  }
+}
+
+.layout {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=SF+Pro&display=swap');
