@@ -12,7 +12,6 @@ public class Group
     [Required]
     public string GroupName { get; set; }
 
-    public int UserId { get; set; }
     [ForeignKey("UserId")]
     public User GroupCreator { get; set; }
     
