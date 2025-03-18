@@ -11,7 +11,7 @@ public class GroupController
 {
         private NotableDbContext _context;
         public GroupController(NotableDbContext context) => _context = context;
-
+        
         // This call will get all posts for a certain group
         [HttpGet("AllPublicGroups")]
         public IEnumerable<object> GetGroups(int GroupId) // get a list of all groups that are public
