@@ -24,4 +24,5 @@ public class Comment
     public string CommentContent { get; set; }
 
     [Required] public int CommentLikes { get; set; } = 0;
+    public List<Response>? Response { get; set; } // List of responses for this comment
 }

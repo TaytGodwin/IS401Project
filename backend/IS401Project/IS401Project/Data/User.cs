@@ -21,6 +21,7 @@ public class User
     public int DaysRead { get; set; } = 0;
     public int LongestStreak { get; set; } = 0;
     
-    public List<UserGroup>? UserGroups { get; set; } = new List<UserGroup>();
+    public List<UserGroup>? UserGroups { get; set; } = new List<UserGroup>(); // List of groups their in through the linking table
+    public List<Note>? Notes { get; set; } // All of their notes
 
 }
