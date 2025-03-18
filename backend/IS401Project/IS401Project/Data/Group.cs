@@ -5,6 +5,7 @@ namespace IS401Project.Data;
 
 public class Group
 {
+
     [Key]
     [Required]
     public int GroupId { get; set; }
