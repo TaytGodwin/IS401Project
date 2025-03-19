@@ -27,5 +27,6 @@ public class Post
     [Required] public int PostComments { get; set; } = 0;
 
     [Required] public int NumberOfLikes { get; set; } = 0;
+    public List<Comment>? Comments { get; set; } // List of comments for this post
 
 }

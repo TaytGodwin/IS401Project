@@ -1,38 +1,53 @@
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using IS401Project.Data;
-using IS401Project.Views;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
-namespace IS401Project.Controllers
+namespace IS401Project.Controllers;
+[Route("api/[controller]")]
+[ApiController]
+public class GroupController
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class GroupController : ControllerBase
-    {
-        private readonly ILogger<GroupController> _logger;
+        private NotableDbContext _context;
+        public GroupController(NotableDbContext context) => _context = context;
+        
+        // This call will get all posts for a certain group
+        [HttpGet("AllPublicGroups")]
+        public IEnumerable<object> GetGroups(int GroupId) // get a list of all groups that are public
+        {
+                var publicGroups = _context.Groups
+                        .Where(g => g.PrivacyStatus == "Public").ToList();
+                
+                return publicGroups;
+        }
 
-        public GroupController(ILogger<GroupController> logger)
+        // This call will get all posts for a certain group
+        [HttpGet("AllPosts/{GroupId}")]
+        public IEnumerable<object> GetPostsForGroup(int GroupId)
         {
-            _logger = logger;
+                var groupPosts = _context.Posts
+                        .Where(n => n.GroupId == GroupId).ToList();
+
+                return groupPosts;
         }
-        
-        [HttpGet]
-        public IActionResult Delete(int id)
+
+        // This call will get all comments for a certain post
+        [HttpGet("CommentsForPost/{PostId}")]
+        public IEnumerable<object> GetCommentsForPost(int PostId)
         {
-            var recordToDelete = _logger.Users
-                .Single(x => x.UserID == id);
-        
-            return View(recordToDelete);
+                var comments = _context.Comments
+                        .Where(n => n.PostId == PostId).ToList();
+                
+                return comments;
         }
-        
-        [HttpPost]
-        public IActionResult Delete(User user)
+
+        // This call will get all responses for a specific comment
+        [HttpGet("ResponseForComment/{CommentId}")]
+        public IEnumerable<object> GetResponsesForComment(int CommentId)
         {
-            _logger.Users.Remove(user);
-            _logger.SaveChanges();
-            return RedirectToAction("ViewMovies");
+                var responses = _context.Responses
+                        .Where(n => n.CommentId == CommentId).ToList();
+                return responses;
         }
-    }
 }
