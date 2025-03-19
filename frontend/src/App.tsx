@@ -11,6 +11,7 @@ import PublicGroupsPage from './components/Groups/PublicGroupsPage';
 import CreatePostPage from './components/CreatePost/CreatePostPage'; // Corrected import
 import NotesList from './components/Notes/NotePage'; // NotesList component
 import React from 'react';
+import ProfilePage from './components/Profile/ProfilePage';
 
 function Settings() {
   return (
@@ -30,7 +31,7 @@ function App() {
           <Route path="all-groups" element={<PublicGroupsPage />} />
           <Route path="make-a-post" element={<CreatePostPage />} />
           <Route path="settings" element={<Settings />} />
-          <Route path="profile" element={<Profile />} />
+          <Route path="profile" element={<ProfilePage />} />
           {/* CreatePost route */}
           <Route path="notes" element={<NotesList />} />
           <Route path="/" element={<Navigate to="/login" />} />
