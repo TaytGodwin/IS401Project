@@ -5,9 +5,11 @@ namespace IS401Project.Data;
 public class UserGroup
 {
     [Required]
-    public int UserID { get; set; }
+    [Key]
+    public int UserId { get; set; }
     public User User { get; set; }
     [Required]
+    [Key]
     public int GroupID { get; set; }
     public Group Group { get; set; }
     public string Status { get; set; }

@@ -31,5 +31,36 @@ namespace IS401Project.Controllers
                                 .ToList();
             return NotesWithTags;
         }
+
+        // This will return all notes for a specific tag
+        [HttpGet("AllNotesForTag/{UserId}&{TagId}")]
+        public IEnumerable<object> GetNotesForTag(int UserId, int TagId) // Recieve UserID & TagID as a parameter
+        {
+            var NotesForOneTag = _context.Notes
+                                .Include(n => n.TagNotes)
+                                .Include(n => n.TagNotes) // Include the related TagNotes table
+                                .Where(n => n.UserId == UserId && n.TagNotes.Any(tn => tn.TagId == TagId)) // Check if the TagNotes contain the specified Tag
+                                .Select(n => new
+                                {
+                                    n.NoteId,
+                                    n.NoteDate,
+                                    n.NoteContent
+                                })
+                                .ToList();
+            return NotesForOneTag;
+        }
+
+        // This will return all tag names
+        [HttpGet("AllTags/{UserId}")]
+        public IEnumerable<object> GetNotesForTag(int UserId) // Recieve UserID as a parameter
+        {
+            var tagNames = _context.Notes
+                            .Where(n => n.UserId == UserId) // Filter by UserId
+                            .SelectMany(n => n.TagNotes) // go through the TagNotes table
+                            .Select(tn => tn.Tag.TagName) // Select the tag names
+                            .ToList();
+
+            return tagNames;
+        }
     }
 }
