@@ -10,7 +10,7 @@
 //     <div className="layout relative">
 //       {/* Navbar at the top */}
 //       <Navbar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
-      
+
 //       {/* Render Sidebar so that it can slide in/out */}
 //       <Sidebar isOpen={sidebarOpen} closeSidebar={() => setSidebarOpen(false)} />
 
@@ -36,15 +36,15 @@
 
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import Navbar from './NavBar';
+import Navbar from './Navbar';
 import Footer from './Footer';
 
 const Layout = () => {
-    const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="layout">
       <header>
-      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       </header>
       <main>
         {/* This Outlet renders the matched child route components */}

@@ -2,16 +2,15 @@
 import React from 'react';
 import NoteEditor from './NoteEditor';
 
-const NotableApp = () => {
+const CreatePostPage = () => {
   return (
     <main className="app-container">
       <div className="app-wrapper">
-        <div className="app-header-container">
-        </div>
+        <div className="app-header-container"></div>
         <NoteEditor />
       </div>
       <style jsx>{`
-        .app-container2 {
+        .app-container {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -19,13 +18,13 @@ const NotableApp = () => {
           height: 100vh;
           background-color: #fff;
         }
-        .app-wrapper2 {
+        .app-wrapper {
           width: 100%;
           height: 100%;
           display: flex;
           flex-direction: column;
         }
-        .app-header-container2 {
+        .app-header-container {
           width: 100%;
           height: 96px;
           background-color: #255c99;
@@ -37,4 +36,4 @@ const NotableApp = () => {
   );
 };
 
-export default NotableApp;
+export default CreatePostPage;
