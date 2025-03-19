@@ -12,29 +12,13 @@ import CreatePostPage from './components/CreatePost/CreatePostPage'; // Correcte
 import NotesList from './components/Notes/NotePage'; // NotesList component
 import React from 'react';
 
-function Settings(){
-
-  return(
+function Settings() {
+  return (
     <div>
-
-    <p>This page is settings </p>
-
+      <p>This page is settings </p>
     </div>
-
   );
 }
-function Profile(){
-
-  return(
-    <div>
-
-  <h1> Profile </h1>
-
-    </div>
-
-  );
-}
-
 
 function App() {
   return (
