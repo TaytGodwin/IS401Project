@@ -29,7 +29,7 @@ namespace IS401Project.Data
 
             // Define composite key for UserGroup
             modelBuilder.Entity<UserGroup>()
-                .HasKey(u => new { u.UserID, u.GroupID }); // Makes a composite key in the linking table
+                .HasKey(u => new { u.UserId, u.GroupID }); // Makes a composite key in the linking table
 
             base.OnModelCreating(modelBuilder);
         }
