@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<NotableDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("NotableConnection")));
+builder.Services.AddCors();
 
 var app = builder.Build();
 

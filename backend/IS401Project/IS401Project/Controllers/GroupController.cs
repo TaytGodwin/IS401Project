@@ -12,7 +12,7 @@ public class GroupController
         private NotableDbContext _context;
         public GroupController(NotableDbContext context) => _context = context;
         
-        // This call will get all posts for a certain group
+        // This call will get all posts for all public groups
         [HttpGet("AllPublicGroups")]
         public IEnumerable<object> GetGroups(int GroupId) // get a list of all groups that are public
         {
@@ -22,12 +22,14 @@ public class GroupController
                 return publicGroups;
         }
 
-        // This call will get all posts for a certain group
+        // This call will get all posts for a certain group and will also return all of its posts
         [HttpGet("AllPosts/{GroupId}")]
         public IEnumerable<object> GetPostsForGroup(int GroupId)
         {
                 var groupPosts = _context.Posts
-                        .Where(n => n.GroupId == GroupId).ToList();
+                        .Include(p => p.Group) // Include the group information
+                        .Where(p => p.GroupId == GroupId)
+                        .ToList();
 
                 return groupPosts;
         }
