@@ -11,14 +11,7 @@ import PublicGroupsPage from './components/Groups/PublicGroupsPage';
 import CreatePostPage from './components/CreatePost/CreatePostPage'; // Corrected import
 import NotesList from './components/Notes/NotePage'; // NotesList component
 import ProfilePage from './components/Profile/ProfilePage';
-
-function Settings() {
-  return (
-    <div>
-      <p>This page is settings </p>
-    </div>
-  );
-}
+import ChatInterface from './components/GroupChat/ChatInterface';
 
 function App() {
   return (
@@ -29,10 +22,10 @@ function App() {
           <Route path="menu" element={<HomePage />} />
           <Route path="all-groups" element={<PublicGroupsPage />} />
           <Route path="make-a-post" element={<CreatePostPage />} />
-          <Route path="settings" element={<Settings />} />
           <Route path="profile" element={<ProfilePage />} />
           {/* CreatePost route */}
           <Route path="notes" element={<NotesList />} />
+          <Route path="settings" element={<ChatInterface />} />
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="*" element={<Navigate to="/menu" />} />{' '}
           {/* Fallback for unknown routes */}
