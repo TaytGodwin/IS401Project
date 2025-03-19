@@ -19,6 +19,7 @@ public class Group
     public DateTime CreationDate { get; set; } = DateTime.Now;
     [Required]
     public string PrivacyStatus { get; set; } = "Private";
+    public string GroupProfilePicUrl { get; set; }
     
     public List<UserGroup>? UserGroups { get; set; } = new List<UserGroup>(); // List of users through usergroups linking table
     public List<Post>? Posts { get; set; } // List of posts for this group
