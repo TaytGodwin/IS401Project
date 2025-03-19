@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import GroupItem from './GroupItem';
+import { PlusIcon } from "./Icons";
 
 interface Group {
   name: string;
@@ -16,7 +17,7 @@ const GroupsList: React.FC<GroupsListProps> = ({ groups }) => {
       <div className="groups-header">
         <h2 className="groups-title">GROUPS</h2>
         <button className="add-group-button">
-          
+          <PlusIcon />
         </button>
       </div>
 
