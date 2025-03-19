@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-
+import { EditIcon, MoreIcon } from "./Icons";
 interface GroupItemProps {
   name: string;
 }
@@ -11,10 +11,10 @@ const GroupItem: React.FC<GroupItemProps> = ({ name }) => {
       <h3 className="group-name">{name}</h3>
       <div className="group-actions">
         <button className="action-button">
-          
+          <EditIcon />
         </button>
         <button className="action-button">
-         
+          <MoreIcon />
         </button>
       </div>
 
