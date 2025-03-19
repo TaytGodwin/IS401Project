@@ -6,7 +6,7 @@ public class UserGroup
 {
     [Required]
     [Key]
-    public int UserID { get; set; }
+    public int UserId { get; set; }
     public User User { get; set; }
     [Required]
     [Key]
