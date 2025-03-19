@@ -12,6 +12,30 @@ import CreatePostPage from './components/CreatePost/CreatePostPage'; // Correcte
 import NotesList from './components/Notes/NotePage'; // NotesList component
 import React from 'react';
 
+function Settings(){
+
+  return(
+    <div>
+
+    <p>This page is settings </p>
+
+    </div>
+
+  );
+}
+function Profile(){
+
+  return(
+    <div>
+
+  <h1> Profile </h1>
+
+    </div>
+
+  );
+}
+
+
 function App() {
   return (
     <Router>
@@ -20,7 +44,9 @@ function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="menu" element={<HomePage />} />
           <Route path="all-groups" element={<PublicGroupsPage />} />
-          <Route path="create-post-page" element={<CreatePostPage />} />
+          <Route path="make-a-post" element={<CreatePostPage />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="profile" element={<Profile />} />
           {/* CreatePost route */}
           <Route path="notes" element={<NotesList />} />
           <Route path="/" element={<Navigate to="/login" />} />
