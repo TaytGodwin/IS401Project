@@ -10,7 +10,6 @@ import HomePage from './components/Home/HomePage';
 import PublicGroupsPage from './components/Groups/PublicGroupsPage';
 import CreatePostPage from './components/CreatePost/CreatePostPage'; // Corrected import
 import NotesList from './components/Notes/NotePage'; // NotesList component
-import React from 'react';
 import ProfilePage from './components/Profile/ProfilePage';
 
 function Settings() {

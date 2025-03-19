@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import NoteEditor from './NoteEditor';
 
 const CreatePostPage = () => {

@@ -84,7 +84,6 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
             <div
               className="bg-white shadow-md p-4"
               style={{ width: '16.67%' }}
-              
               onClick={handleSidebarClick}
             >
               {/* Sidebar items that eventually need to pop out from the side. */}
