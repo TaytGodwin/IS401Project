@@ -8,12 +8,16 @@ const NoteEditor = () => {
     'Today, I studied Moroni 7:47: "But charity is the pure love of Christ, and it endureth forever..." I realized that charity isn\'t just about giving—it\'s about seeing others as Christ does. When I focus on love first, my actions naturally follow.'
   );
 
+  const handleTagClick = () => {
+    console.log('Tag button clicked');
+  };
+
+  const handleShareClick = () => {
+    console.log('Share button clicked');
+  };
+
   return (
     <section className="editor-container2">
-      <div className="editor-header2">
-        <div className="drag-indicator2" />
-      </div>
-
       <input
         type="text"
         className="note-title2"
@@ -30,7 +34,7 @@ const NoteEditor = () => {
       />
 
       <div className="action-buttons2">
-        <ActionButton>
+        <ActionButton onClick={handleTagClick}>
           <svg
             width="38"
             height="36"
@@ -49,7 +53,7 @@ const NoteEditor = () => {
           </svg>
         </ActionButton>
 
-        <ActionButton>
+        <ActionButton onClick={handleShareClick}>
           <svg
             width="38"
             height="36"
@@ -75,69 +79,79 @@ const NoteEditor = () => {
           flex-direction: column;
           align-items: center;
           width: 100%;
-          height: 723px;
+          max-width: 800px;
           background-color: #b0b7c3;
           border-radius: 28px;
           box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
             0px 1px 3px 0px rgba(0, 0, 0, 0.3);
-          margin-top: 33px;
+          margin: 32px auto;
+          padding: 24px;
+          box-sizing: border-box;
         }
-        .editor-header2 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
-          padding: 16px;
-          gap: 12px;
-        }
-        .drag-indicator2 {
-          width: 32px;
-          height: 4px;
-          border-radius: 100px;
-          background-color: #255c99;
-        }
+
         .note-title2 {
-          width: 261px;
-          height: 48px;
+          width: 100%;
+          max-width: 600px;
           color: #255c99;
           font-size: 27px;
           font-family: Roboto, sans-serif;
           border-radius: 8px;
-          border-width: 1px;
-          border-color: #255c99;
+          border: 1px solid #255c99;
+          background-color: #fff;
+          margin-top: 16px;
+          text-align: center;
+          padding: 12px;
+          box-sizing: border-box;
+        }
+
+        .note-content2 {
+          width: 100%;
+          max-width: 650px;
+          height: 300px;
+          color: #255c99;
+          font-size: 20px;
+          font-family: Roboto, sans-serif;
+          text-align: center;
+          line-height: 1.5;
+          border-radius: 10px;
+          border: 1px solid #255c99;
           background-color: #fff;
           margin-top: 24px;
-          text-align: center;
-          padding: 8px;
-        }
-        .note-content2 {
-          color: #255c99;
-          text-align: center;
-          font-family: Roboto, sans-serif;
-          font-size: 20px;
-          line-height: 1.5;
-          width: 320px;
-          height: 344px;
-          border-radius: 10px;
-          border-width: 1px;
-          border-color: #255c99;
-          background-color: #fff;
-          margin-top: 26px;
           padding: 16px;
           resize: none;
+          box-sizing: border-box;
         }
+
         .action-buttons2 {
           display: flex;
           justify-content: space-between;
           width: 100%;
-          padding-left: 24px;
-          padding-right: 24px;
-          margin-top: 195px;
+          max-width: 500px;
+          margin-top: 48px;
         }
+
         .tag-icon,
         .share-icon {
           width: 38px;
           height: 36px;
+        }
+
+        @media (max-width: 600px) {
+          .note-title2 {
+            font-size: 22px;
+          }
+
+          .note-content2 {
+            font-size: 18px;
+            height: 240px;
+          }
+
+          .action-buttons2 {
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+            max-width: 100%;
+          }
         }
       `}</style>
     </section>

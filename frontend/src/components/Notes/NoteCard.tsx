@@ -7,7 +7,6 @@ interface NoteCardProps {
 }
 
 const NoteCard: React.FC<NoteCardProps> = ({ title, tags, content }) => {
-  // Function to handle newlines in content
   const formatContent = (text: string) => {
     return text.split('\n\n').map((paragraph, index) => (
       <React.Fragment key={index}>
@@ -29,8 +28,8 @@ const NoteCard: React.FC<NoteCardProps> = ({ title, tags, content }) => {
                 <div
                   dangerouslySetInnerHTML={{
                     __html: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 4L4 12M4 4L12 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>`,
+                      <path d="M12 4L4 12M4 4L12 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>`,
                   }}
                 />
               </div>
@@ -43,33 +42,40 @@ const NoteCard: React.FC<NoteCardProps> = ({ title, tags, content }) => {
       <style jsx>{`
         .note-card {
           width: 100%;
+          max-width: 100%;
           background-color: #255c99;
           border-radius: 15px;
-          padding: 16px;
-          opacity: 0.9;
+          padding: 20px;
+          margin: 0 auto;
+          box-sizing: border-box;
+          opacity: 0.95;
         }
 
         .note-content {
           display: flex;
           flex-direction: column;
-          gap: 8px;
+          gap: 12px;
         }
 
         .note-header {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
         }
 
         .note-title {
           color: #f5f5f5;
-          font-size: 16px;
+          font-size: 1.25rem;
           font-weight: 700;
           margin: 0;
+          flex: 1;
         }
 
         .tags-container {
           display: flex;
+          flex-wrap: wrap;
           gap: 8px;
         }
 
@@ -84,17 +90,55 @@ const NoteCard: React.FC<NoteCardProps> = ({ title, tags, content }) => {
 
         .tag-text {
           color: #fff;
-          font-size: 16px;
-          font-weight: 700;
+          font-size: 0.95rem;
+          font-weight: 600;
         }
 
         .note-text {
           color: #f5f5f5;
-          font-size: 16px;
-          text-align: center;
-          line-height: 24px;
+          font-size: 1.05rem;
+          line-height: 1.6;
           letter-spacing: 0.5px;
           margin: 0;
+        }
+
+        @media (min-width: 768px) {
+          .note-card {
+            padding: 28px;
+            border-radius: 20px;
+          }
+
+          .note-text {
+            font-size: 1.1rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .note-card {
+            padding: 16px;
+          }
+
+          .note-title {
+            font-size: 1.1rem;
+          }
+
+          .note-text {
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .note-card {
+            padding: 12px;
+          }
+
+          .note-title {
+            font-size: 1rem;
+          }
+
+          .note-text {
+            font-size: 0.95rem;
+          }
         }
       `}</style>
     </article>
