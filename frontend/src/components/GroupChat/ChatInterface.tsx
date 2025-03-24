@@ -1,6 +1,5 @@
 'use client';
 import * as React from 'react';
-import ChatHeader from './ChatHeader';
 import GroupInfo from './GroupInfo';
 import ChatMessages from './ChatMessages';
 import ChatInput from './ChatInput';
@@ -8,7 +7,6 @@ import ChatInput from './ChatInput';
 const ChatInterface: React.FC = () => {
   return (
     <div className="chat-container">
-      <ChatHeader />
       <main className="chat-content">
         <GroupInfo
           avatarUrl="https://placehold.co/78x71/255C99/255C99"
