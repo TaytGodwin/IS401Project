@@ -25,7 +25,7 @@ function App() {
           <Route path="profile" element={<ProfilePage />} />
           {/* CreatePost route */}
           <Route path="notes" element={<NotesList />} />
-          <Route path="settings" element={<ChatInterface />} />
+          <Route path="recent-chat" element={<ChatInterface />} />
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="*" element={<Navigate to="/menu" />} />{' '}
           {/* Fallback for unknown routes */}

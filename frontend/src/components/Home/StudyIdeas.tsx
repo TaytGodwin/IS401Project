@@ -7,21 +7,25 @@ const StudyIdeas: React.FC = () => {
       title: 'Prophetic Teachings',
       description:
         'Pair scripture reading with recent talks from General Conference.',
+      imageUrl: 'https://via.placeholder.com/150',
     },
     {
       title: 'Character Study',
       description:
         'Study the life, choices, and faith of a prophet or disciple.',
+      imageUrl: 'https://via.placeholder.com/150',
     },
     {
       title: 'Verse Mapping',
       description:
         'Pick a verse, break it down by keywords, definitions, and cross-references.',
+      imageUrl: 'https://via.placeholder.com/150',
     },
     {
       title: 'Ideas for Kids',
       description:
         'Help children learn about Jesus Christ in ways they understand',
+      imageUrl: 'https://via.placeholder.com/150',
     },
   ];
 
@@ -32,6 +36,7 @@ const StudyIdeas: React.FC = () => {
           key={index}
           title={idea.title}
           description={idea.description}
+          imageUrl={idea.imageUrl}
         />
       ))}
       <style jsx>{`

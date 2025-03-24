@@ -3,12 +3,13 @@ import React from 'react';
 interface StudyCardProps {
   title: string;
   description: string;
+  imageUrl: string;
 }
 
 const StudyCard: React.FC<StudyCardProps> = ({ title, description }) => {
   return (
     <article className="study-card">
-      <div className="card-image" />
+      <div className="card-image"></div>
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
@@ -23,6 +24,11 @@ const StudyCard: React.FC<StudyCardProps> = ({ title, description }) => {
         .card-image {
           height: 132px;
           background-color: cover;
+        }
+        .card-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
         .card-content {
           padding: 24px;
