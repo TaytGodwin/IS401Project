@@ -2857,24 +2857,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/dmattern/.nuget/packages/": {}
+    "C:\\Users\\mayan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj",
+      "projectUniqueName": "C:\\Users\\mayan\\Source\\Repos\\IS401Project\\backend\\IS401Project\\IS401Project\\IS401Project.csproj",
       "projectName": "IS401Project",
-      "projectPath": "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/IS401Project.csproj",
-      "packagesPath": "/Users/dmattern/.nuget/packages/",
-      "outputPath": "/Users/dmattern/RiderProjects/IS401Project/backend/IS401Project/IS401Project/obj/",
+      "projectPath": "C:\\Users\\mayan\\Source\\Repos\\IS401Project\\backend\\IS401Project\\IS401Project\\IS401Project.csproj",
+      "packagesPath": "C:\\Users\\mayan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mayan\\Source\\Repos\\IS401Project\\backend\\IS401Project\\IS401Project\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/dmattern/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2891,9 +2898,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -2943,7 +2950,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/dmattern/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

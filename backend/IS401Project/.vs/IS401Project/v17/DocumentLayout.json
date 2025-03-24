@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\",
+  "WorkspaceRootPath": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\mayan\\source\\repos\\is401project\\backend\\is401project\\is401project\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\mayan\\source\\repos\\is401project\\backend\\is401project\\is401project\\data\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\mayan\\source\\repos\\is401project\\backend\\is401project\\is401project\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\notabledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\mayan\\source\\repos\\is401project\\backend\\is401project\\is401project\\data\\notabledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\notabledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\tater\\onedrive - brigham young university\\classes\\info sys\\is 401 project management\\is401project\\backend\\is401project\\is401project\\data\\usergroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|c:\\users\\mayan\\source\\repos\\is401project\\backend\\is401project\\is401project\\data\\usergroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0EFBE7-AF27-4FEA-98D2-421962CB0B16}|IS401Project\\IS401Project.csproj|solutionrelative:is401project\\data\\usergroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,43 +30,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1112,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Group.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Group.cs",
+              "DocumentMoniker": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Group.cs",
               "RelativeDocumentMoniker": "IS401Project\\Data\\Group.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Group.cs",
+              "ToolTip": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\Group.cs",
               "RelativeToolTip": "IS401Project\\Data\\Group.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T01:42:32.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T01:42:32.079Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\User.cs",
+              "DocumentMoniker": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\User.cs",
               "RelativeDocumentMoniker": "IS401Project\\Data\\User.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\User.cs",
+              "ToolTip": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\User.cs",
               "RelativeToolTip": "IS401Project\\Data\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T01:26:52.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T01:26:52.216Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GroupController.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Controllers\\GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "IS401Project\\Controllers\\GroupController.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Controllers\\GroupController.cs",
               "RelativeToolTip": "IS401Project\\Controllers\\GroupController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA8wBgAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T01:36:09.727Z",
               "EditorCaption": ""
@@ -75,9 +77,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "NotableDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\NotableDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\NotableDbContext.cs",
               "RelativeDocumentMoniker": "IS401Project\\Data\\NotableDbContext.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\NotableDbContext.cs",
+              "ToolTip": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\NotableDbContext.cs",
               "RelativeToolTip": "IS401Project\\Data\\NotableDbContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -87,9 +89,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "UserGroup.cs",
-              "DocumentMoniker": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\UserGroup.cs",
+              "DocumentMoniker": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\UserGroup.cs",
               "RelativeDocumentMoniker": "IS401Project\\Data\\UserGroup.cs",
-              "ToolTip": "C:\\Users\\tater\\OneDrive - Brigham Young University\\Classes\\Info Sys\\IS 401 Project Management\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\UserGroup.cs",
+              "ToolTip": "C:\\Users\\mayan\\source\\repos\\IS401Project\\backend\\IS401Project\\IS401Project\\Data\\UserGroup.cs",
               "RelativeToolTip": "IS401Project\\Data\\UserGroup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
