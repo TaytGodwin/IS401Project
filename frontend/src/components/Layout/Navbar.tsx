@@ -45,44 +45,41 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
   ];
 
   // Prevent clicks inside the sidebar from propagating to the overlay
-  // const handleSidebarClick = (e: React.MouseEvent<HTMLDivElement>) => {
-  //   e.stopPropagation();
-  // };
+  const handleSidebarClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+  };
 
   return (
     <>
-    <div
-      className={`
-        h-screen bg-blue-500 transition-all duration-300 overflow-hidden 
-        ${isOpen ? 'w-64' : 'w-4'}
-      `}
-    >
-      {/* Toggle Button */}
-      <button
-        onClick={toggleMenu}
-        className="w-11 h-11 flex justify-center items-center rounded-md border border-cyan-700 bg-cyan-700 m-2"
-        aria-label="Toggle menu"
-      >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5"
-        >
-          <path
-            d="M2.5 10H17.5M2.5 5H17.5M2.5 15H17.5"
-            stroke="#EDEDED"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
-      
+      <nav className="w-full bg-blue-500 shadow-lg fixed top-0 left-0 z-50">
+        <div className="flex items-right pt-2 px-4 pb-2 relative bg-white shadow z-50">
+          {/* You can add your logo or other elements here */}
+          <button
+            onClick={toggleMenu}
+            className="fixed -4 right-4 z-50 w-11 h-11 flex justify-center items-center rounded-md border border-cyan-700 bg-cyan-700"
+            aria-label="Toggle menu"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+            >
+              <path
+                d="M2.5 10H17.5M2.5 5H17.5M2.5 15H17.5"
+                stroke="#EDEDED"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
         {isOpen && (
-          <div className="mt-4">
+          <div className="fixed inset-0 z-40 flex" onClick={toggleMenu}>
             {/* Sidebar menu - occupies ~1/6 of the viewport width */}
             <div
               className="bg-white shadow-md p-4"
@@ -123,9 +120,10 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
             </div>
 
             {/* Darkened overlay for the remainder of the screen */}
+            <div className="flex-1 bg-black opacity-50"></div>
           </div>
         )}
-      </div>
+      </nav>
     </>
   );
 };
