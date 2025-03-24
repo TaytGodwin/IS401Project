@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import GroupItem from './GroupItem';
-import { PlusIcon } from "./Icons";
+
 
 interface Group {
   name: string;
