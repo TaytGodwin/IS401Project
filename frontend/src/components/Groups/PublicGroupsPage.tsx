@@ -1,5 +1,6 @@
 'use client';
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const PublicGroupsPage: React.FC = () => {
   return (
@@ -144,7 +145,6 @@ const SearchSection: React.FC = () => {
     </form>
   );
 };
-
 
 interface GroupCardProps {
   title: string;
@@ -308,12 +308,13 @@ const GroupGrid: React.FC = () => {
   );
 };
 
-
 interface FloatingActionButtonProps {
   onClick?: () => void;
 }
 
-const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({ onClick }) => {
+const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({
+  onClick,
+}) => {
   return (
     <div className="fab-container">
       <button className="fab-button" onClick={onClick}>
@@ -363,7 +364,5 @@ const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({ onClick }) 
     </div>
   );
 };
-
-
 
 export default PublicGroupsPage;
