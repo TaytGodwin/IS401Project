@@ -1,9 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const FloatingActionButton: React.FC = () => {
+  const navigate = useNavigate();
   const handleClick = () => {
-    // Do something when clicked
-    
+    navigate('/createNote');
   };
 
   return (

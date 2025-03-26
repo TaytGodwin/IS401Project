@@ -7,6 +7,8 @@ namespace IS401Project.Data
         [Key]
         public int NoteId { get; set; }
         [Required]
+        public string NoteTitle { get; set; }
+        [Required]
         public DateTime NoteDate { get; set; } = DateTime.Now;
         public string? NoteContent { get; set; }
         [Required]

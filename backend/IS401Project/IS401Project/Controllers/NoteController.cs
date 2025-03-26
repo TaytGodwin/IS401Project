@@ -24,6 +24,7 @@ namespace IS401Project.Controllers
                                 .Select(n => new
                                 {
                                     n.NoteId,
+                                    n.NoteTitle,
                                     n.NoteDate,
                                     n.NoteContent,
                                     Tags = n.TagNotes.Select(tn => tn.Tag.TagName).ToList()
@@ -43,6 +44,7 @@ namespace IS401Project.Controllers
                                 .Select(n => new
                                 {
                                     n.NoteId,
+                                    n.NoteTitle,
                                     n.NoteDate,
                                     n.NoteContent
                                 })
@@ -61,6 +63,23 @@ namespace IS401Project.Controllers
                             .ToList();
 
             return tagNames;
+        }
+
+        // This will save the note
+        [HttpPost]
+        public async Task<IActionResult> CreateNote([FromBody] Note newNote)
+        {
+            if (newNote == null || string.IsNullOrWhiteSpace(newNote.NoteContent))
+            {
+                return BadRequest("Invalid note data.");
+            }
+
+            newNote.NoteDate = DateTime.UtcNow; // Optional: override to ensure date is set
+
+            _context.Notes.Add(newNote);
+            await _context.SaveChangesAsync();
+
+            return Ok(newNote);
         }
     }
 }

@@ -12,6 +12,7 @@ import CreatePostPage from './components/CreatePost/CreatePostPage'; // Correcte
 import NotesList from './components/Notes/NotePage'; // NotesList component
 import ProfilePage from './components/Profile/ProfilePage';
 import ChatInterface from './components/GroupChat/ChatInterface';
+import CreateNotePage from './components/Notes/CreateNotePage';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="/menu" element={<HomePage />} />
           <Route path="all-groups" element={<PublicGroupsPage />} />
-          <Route path="make-a-post" element={<CreatePostPage />} />
+          <Route path="/make-a-post" element={<CreatePostPage />} />
+          <Route path="/createNote" element={<CreateNotePage />} />
           <Route path="profile" element={<ProfilePage />} />
           {/* CreatePost route */}
           <Route path="notes" element={<NotesList />} />
