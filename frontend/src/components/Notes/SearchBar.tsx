@@ -4,7 +4,7 @@ const SearchBar: React.FC = () => {
   return (
     <form className="search-container">
       <div className="search-border" />
-      
+
       <div className="search-icon">
         <div
           dangerouslySetInnerHTML={{
@@ -16,7 +16,7 @@ const SearchBar: React.FC = () => {
       </div>
 
       <label htmlFor="search-input" className="visually-hidden">
-        Search Public Group
+        Search Notes
       </label>
 
       <input
