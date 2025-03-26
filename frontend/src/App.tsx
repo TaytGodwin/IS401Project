@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="login" element={<LoginPage />} />
-          <Route path="menu" element={<HomePage />} />
+          <Route path="/menu" element={<HomePage />} />
           <Route path="all-groups" element={<PublicGroupsPage />} />
           <Route path="make-a-post" element={<CreatePostPage />} />
           <Route path="profile" element={<ProfilePage />} />

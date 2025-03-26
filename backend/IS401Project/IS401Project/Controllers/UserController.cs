@@ -54,5 +54,13 @@ public class UserController : ControllerBase
         return comments;
     }
 
+    // This will return all usernames and passwords (probs not good for security)
+    [HttpGet("/loginInfo")]
+    public IEnumerable<object> GetLoginInfo ()
+    {
+        var loginInfo = _context.Logins.ToList();
+        return loginInfo;
+    }
+
 
 }
