@@ -8,24 +8,15 @@ const Footer = () => {
         <p style={{ margin: 0 }}>
           &copy; {new Date().getFullYear()} Notable. All rights reserved.
         </p>
-        <div style={socialStyle}>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={linkStyle}>
-            Facebook
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={linkStyle}>
-            Twitter
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={linkStyle}>
-            LinkedIn
-          </a>
-        </div>
+        <p> God loves you and Jesus is the Christ </p>
+        
       </div>
     </footer>
   );
 };
 
 const footerStyle = {
-  backgroundColor: '#333',
+  backgroundColor: '#255c99',
   color: '#fff',
   padding: '1rem 0',
   textAlign: 'center',
@@ -44,10 +35,5 @@ const socialStyle = {
   marginTop: '0.5rem',
 };
 
-const linkStyle = {
-  color: '#fff',
-  margin: '0 0.5rem',
-  textDecoration: 'none',
-};
 
 export default Footer;
