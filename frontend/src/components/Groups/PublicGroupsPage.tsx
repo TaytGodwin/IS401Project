@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const PublicGroupsPage: React.FC = () => {
   return (
@@ -284,19 +284,63 @@ const GroupGrid: React.FC = () => {
   return (
     <section className="group-grid">
       {groups.map((group) => (
-        <GroupCard
-          key={group.id}
-          title={group.title}
-          description={group.description}
-          imageSrc={group.imageSrc}
-        />
+        <Link to="/recent-chat">
+        <a className="study-link">
+              <div className="study-card">
+                {group.imageSrc && (
+                  <img
+                    src={group.imageSrc}
+                    alt={group.title}
+                    className="study-image"
+                  />
+                )}
+                <h2>{group.title}</h2>
+                <p>{group.description}</p>
+              </div>
+            </a>
+        </Link>
       ))}
 
       <style jsx>{`
+      .study-links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .study-link {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .study-card {
+        padding: 12px;
+        border-radius: 8px;
+        background-color: #2c7abf;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        /* You can optionally constrain the card's width */
+        max-width: 300px;
+      }
+
+      .study-card:hover {
+        background-color: #255c99;
+        color: white;
+        transform: scale(1.10);
+      }
+
+      .study-image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 12px;
+      }
         .group-grid {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 29px;
+          justify-items: center;
         }
         @media (max-width: 640px) {
           .group-grid {
