@@ -72,7 +72,7 @@ const StudyLinks = () => {
         .study-card {
           padding: 16px;
           border-radius: 8px;
-          background-color: #f5f5f5;
+          background-color: #2c7abf;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
           transition:
             background-color 0.3s ease-in-out,
@@ -82,7 +82,7 @@ const StudyLinks = () => {
         .study-card:hover {
           background-color: #255c99;
           color: white; /* Ensures text remains readable */
-          transform: scale(1.05);
+          transform: scale(1.10);
         }
 
         .study-image {
