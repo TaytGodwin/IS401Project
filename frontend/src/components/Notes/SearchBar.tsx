@@ -22,7 +22,7 @@ const SearchBar: React.FC = () => {
       <input
         id="search-input"
         className="search-input"
-        placeholder="Search Public Group"
+        placeholder="Search Notes"
       />
 
       <button type="button" className="menu-button">
