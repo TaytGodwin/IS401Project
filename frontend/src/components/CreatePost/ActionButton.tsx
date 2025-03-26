@@ -1,13 +1,16 @@
 import React, { ReactNode } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface ActionButtonProps {
   children: ReactNode;
-  onClick?: () => void;
+  to: string; // URL to navigate to
 }
 
-const ActionButton = ({ children, onClick }: ActionButtonProps) => {
+const ActionButton = ({ children, to }: ActionButtonProps) => {
+  const navigate = useNavigate();
+
   return (
-    <button className="action-button" onClick={onClick}>
+    <button className="action-button" onClick={() => navigate(to)}>
       {children}
       <style jsx>{`
         .action-button {
