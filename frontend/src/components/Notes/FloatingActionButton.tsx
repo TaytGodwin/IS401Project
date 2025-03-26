@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const FloatingActionButton: React.FC = () => {
   const navigate = useNavigate();
-
   const handleClick = () => {
-    navigate('/make-a-post'); // Redirect to CreatePost page
+    navigate('/createNote');
   };
 
   return (

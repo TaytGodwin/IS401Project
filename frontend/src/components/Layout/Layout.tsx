@@ -35,19 +35,25 @@
 // Layout.js
 
 import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 const Layout = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const hideNavbarRoutes = ['/login']; // add more if needed
+  const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
+
   return (
     <div className="layout">
-      <header>
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
-      </header>
+      {!shouldHideNavbar && (
+        <header>
+          <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        </header>
+      )}
       <main>
-        {/* This Outlet renders the matched child route components */}
         <Outlet />
       </main>
       <footer>
