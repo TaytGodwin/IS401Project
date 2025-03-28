@@ -46,6 +46,9 @@ const Layout = () => {
   const hideNavbarRoutes = ['/login']; // add more if needed
   const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
 
+  const hideFooterRoutes = ['/recent-chat']; // Add any other routes where you want to hide the footer
+  const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
+
   return (
     <div className="layout">
       {!shouldHideNavbar && (
@@ -56,9 +59,11 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      {!shouldHideFooter && (
+        <footer>
+          <Footer />
+        </footer>
+      )}
     </div>
   );
 };

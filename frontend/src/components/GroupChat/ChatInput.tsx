@@ -1,12 +1,16 @@
 'use client';
 import * as React from 'react';
 
-const ChatInput: React.FC = () => {
+interface ChatInputProps {
+  setShowSentMessage: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ChatInput: React.FC<ChatInputProps> = ({ setShowSentMessage }) => {
   const [message, setMessage] = React.useState('');
 
   const handleSendMessage = () => {
     if (message.trim()) {
-      // Handle sending message logic here
+      setShowSentMessage(true); // Show the hidden message
       setMessage('');
     }
   };
@@ -28,28 +32,14 @@ const ChatInput: React.FC = () => {
           aria-label="Send message"
         >
           <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
+            width="24"
+            height="24"
+            viewBox="2 2 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M9.99998 10.8334C10.4602 10.8334 10.8333 10.4603 10.8333 10.0001C10.8333 9.53984 10.4602 9.16675 9.99998 9.16675C9.53974 9.16675 9.16665 9.53984 9.16665 10.0001C9.16665 10.4603 9.53974 10.8334 9.99998 10.8334Z"
-              stroke="#F5F5F5"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M15.8333 10.8334C16.2936 10.8334 16.6666 10.4603 16.6666 10.0001C16.6666 9.53984 16.2936 9.16675 15.8333 9.16675C15.3731 9.16675 15 9.53984 15 10.0001C15 10.4603 15.3731 10.8334 15.8333 10.8334Z"
-              stroke="#F5F5F5"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M4.16665 10.8334C4.62688 10.8334 4.99998 10.4603 4.99998 10.0001C4.99998 9.53984 4.62688 9.16675 4.16665 9.16675C3.70641 9.16675 3.33331 9.53984 3.33331 10.0001C3.33331 10.4603 3.70641 10.8334 4.16665 10.8334Z"
+              d="M12 5V19M5 12H19"
               stroke="#F5F5F5"
               strokeWidth="2"
               strokeLinecap="round"

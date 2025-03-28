@@ -5,16 +5,18 @@ import ChatMessages from './ChatMessages';
 import ChatInput from './ChatInput';
 
 const ChatInterface: React.FC = () => {
+  const [showSentMessage, setShowSentMessage] = React.useState(false);
+
   return (
     <div className="chat-container">
       <main className="chat-content">
         <GroupInfo
-          avatarUrl="https://placehold.co/78x71/255C99/255C99"
+          avatarUrl="./src/assets/allGroups/bookclub.png"
           groupName="Book Club"
         />
-        <ChatMessages />
+        <ChatMessages showSentMessage={showSentMessage} />
       </main>
-      <ChatInput />
+      <ChatInput setShowSentMessage={setShowSentMessage} />
 
       <style jsx>{`
         .chat-container {

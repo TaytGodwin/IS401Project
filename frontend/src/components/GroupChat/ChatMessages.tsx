@@ -1,7 +1,11 @@
 import * as React from 'react';
 import MessageBubble from './MessageBubble';
 
-const ChatMessages: React.FC = () => {
+interface ChatMessagesProps {
+  showSentMessage: boolean;
+}
+
+const ChatMessages: React.FC<ChatMessagesProps> = ({ showSentMessage }) => {
   return (
     <section className="messages-container">
       <div className="message-group">
@@ -28,12 +32,14 @@ const ChatMessages: React.FC = () => {
         />
       </div>
 
-      <div className="sent-message-container">
-        <MessageBubble
-          text="That is very inspiring, thanks for sharing!"
-          type="sent"
-        />
-      </div>
+      {showSentMessage && (
+        <div className="sent-message-container">
+          <MessageBubble
+            text="That is very inspiring, thanks for sharing!"
+            type="sent"
+          />
+        </div>
+      )}
 
       <style jsx>{`
         .messages-container {
@@ -42,6 +48,7 @@ const ChatMessages: React.FC = () => {
           display: flex;
           flex-direction: column;
           gap: 47px;
+          padding-bottom: 80px;
         }
 
         .message-group {

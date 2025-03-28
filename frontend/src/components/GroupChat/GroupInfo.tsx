@@ -8,7 +8,9 @@ interface GroupInfoProps {
 const GroupInfo: React.FC<GroupInfoProps> = ({ avatarUrl, groupName }) => {
   return (
     <section className="group-info">
-      <img src={avatarUrl} alt={`${groupName}`} className="group-avatar" />
+      <div className="avatar-container">
+        <img src={avatarUrl} alt={`${groupName}`} className="group-avatar" />
+      </div>
       <h1 className="group-name">{groupName}</h1>
 
       <style jsx>{`
@@ -18,11 +20,18 @@ const GroupInfo: React.FC<GroupInfoProps> = ({ avatarUrl, groupName }) => {
           align-items: center;
         }
 
-        .group-avatar {
-          width: 78px;
-          height: 71px;
-          border-radius: 50%;
+        .avatar-container {
+          width: 68px;
+          height: 68px;
+          border-radius: 9999px;
           border: 1px solid #255c99;
+          overflow: hidden;
+        }
+
+        .group-avatar {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
 
         .group-name {
