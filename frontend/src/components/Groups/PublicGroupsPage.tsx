@@ -280,9 +280,13 @@ const GroupGrid: React.FC = () => {
       imageSrc: './src/assets/allGroups/jesus.png',
     },
   ];
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/recent-chat'); // Navigate to 'recent-chat'
+  };
 
   return (
-    <section className="group-grid">
+    <section className="group-grid" onClick={handleClick}>
       {groups.map((group) => (
         <GroupCard
           key={group.id}
@@ -315,9 +319,15 @@ interface FloatingActionButtonProps {
 const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({
   onClick,
 }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if (onClick) onClick(); // Calling any external onClick prop if provided
+    navigate('/recent-chat'); // Navigate to 'recent-chat'
+  };
+
   return (
     <div className="fab-container">
-      <button className="fab-button" onClick={onClick}>
+      <button className="fab-button" onClick={handleClick}>
         <svg
           width="24"
           height="24"
